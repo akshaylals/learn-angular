@@ -15,6 +15,8 @@
 
 <div>
     <button (click)="addRoom()">Add Room</button>
+    <button (click)="editRoom()">Edit Room</button>
+    <button (click)="deleteRoom()">Delete Room</button>
 </div>
 
 <div *ngIf="rooms.availableRooms > 0">
@@ -22,3 +24,5 @@
 </div>
 
 <button (click)="toggle()">Toggle</button>
+
+<h1>{{ totalBytes }}</h1>
